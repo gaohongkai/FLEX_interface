@@ -1,2 +1,6 @@
 # FLEX_interface
-This code creates an interface for the FLEX hydrological model
+This project creates an interface for the FLEX hydrological model.
+FLEX hydrological model allows us to choose flexible hydrological modelling structure, based on our understanding of catchment rainfall-runoff processes. The generic components of the FLEX model are reservoirs, lag functions and connection elements. The flux functions describing storage-discharge relationships, shape of lag functions, etc, are selected from a library of functions and can be used to hypothesize and build multiple alternative model structures. 
+The end-users can select different generic reservoir and corresponding constitutive functions for interception reservoir, unsaturated reservoir, fast response reservoir and slow response reservoir. Moreover, lag functions, splitters and multipliers can also be used as generic components to build flexible models. 
+FLEX model is implemented as a standalone Fortran-95 code, and is also integrated into the built-in model library in Petit Bateau. Hence, installing Petit Bateau gives you immediate access to FLEX. This also means we need to install Petit Bateau to run the FLEX model. 
+The FLEX interface, coded by C#, can be used to easily and visually generate different model structures. After selecting the model structure in the interface, a configuration file for Petit Bateau can be atomatically generated. Modellers can flexibly choose their conceptual model to understand catchment rainfall-runoff processes, as simple as playing Lego bricks.
